@@ -1,7 +1,7 @@
 package com.hanbit.oop.domain;
 
 public class MemberBean { 
- 	String id,pw,ssn,name; 
+ 	String id,pw,ssn,name,memberByName; 
  	public void setId(String id){ 
  		this.id=id; 
  	} 
@@ -28,8 +28,12 @@ public class MemberBean {
  	} 
  	public String toString(){ 
  		return "회원[id="+id+",pw="+pw+",ssn=" + ssn + ",name="+name+"]"; 
- 		
-
+ 	}
+ 	public void setMemberByName(String memberByName){
+ 		this.memberByName=memberByName;
+ 	}
+ 	public String getMemberByName(){
+ 		return memberByName;
  	}
  	} 
  
